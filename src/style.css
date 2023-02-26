@@ -1,0 +1,10 @@
+.library {
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.bookDiv {
+    display: flex;
+    justify-content: space-between;
+}
