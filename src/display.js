@@ -1,4 +1,5 @@
-import myLibrary from "./myLibrary";
+import { myLibrary }  from "./myLibrary";
+import { setLibrary } from "./myLibrary";
 
 const showButton = document.querySelector('.addBook');
 const formContainer = document.querySelector('.formSection');
@@ -25,13 +26,14 @@ function displayBooks(array) {
       removeButton.addEventListener('click', () => {
         myLibrary.splice(i, 1);
         displayBooks(myLibrary);
+        setLibrary();
       });
-      newBookDisplay.textContent = array[i].info();
+      //newBookDisplay.textContent = array[i].info();
+      newBookDisplay.textContent = myLibrary[i].info();
       newBookDisplay.appendChild(removeButton);
       newBookDisplay.appendChild(toggleRead);
       library.appendChild(newBookDisplay);
     }
-    console.log(myLibrary);
   }
 
   showButton.addEventListener('click', () => {
