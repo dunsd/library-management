@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    height: 100%;
+}
+
 .library {
     border: solid 1px;
     border-radius: 5px;
@@ -7,4 +12,17 @@
 .bookDiv {
     display: flex;
     justify-content: space-between;
+}
+.formSection {
+    display: flex;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: antiquewhite;
+    margin: 0;
 }
