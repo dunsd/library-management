@@ -24,19 +24,19 @@
                         <li>
                             <label for="bookTitle">
                                 <span>Book Title: </span>
-                                <input type="text" id="bookTitle" name="bookTitle" value=""/>
+                                <input type="text" id="bookTitle" name="bookTitle" required minlength="1" maxlength="20"/>
                             </label>
                         </li>
                         <li>
                             <label for="bookAuthor">
                                 <span>Book Author: </span>
-                                <input type="text" id="bookAuthor" name="bookAuthor" />
+                                <input type="text" id="bookAuthor" name="bookAuthor" required minlength="1" maxlength="20"/>
                             </label>
                         </li>
                         <li>
                             <label for="bookPages">
                                 <span>Number of Pages: </span>
-                                <input type="number" id="bookPages" name="bookPages" />
+                                <input type="number" id="bookPages" name="bookPages" value="1" min="1" max="3000"/>
                             </label>
                         </li>
                         <li>
@@ -48,7 +48,7 @@
                         <li>
                             <label for="rating">
                                 <span>Rating? </span>:
-                                <input type="number" id="rating" name="rating" />
+                                <input type="number" id="rating" name="rating" value="5" min="0" max="10" />
                             </label>
                         </li>
                     </ul>
