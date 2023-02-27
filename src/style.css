@@ -1,28 +1,49 @@
 body {
     margin: 0;
     height: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 .library {
     border: solid 1px;
     border-radius: 5px;
     padding: 5px;
+    width: clamp(500px, 80%, 900px);
 }
 
 .bookDiv {
     display: flex;
     justify-content: space-between;
+    
+    height: 1.5em;
 }
+
+.bookText {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
 .formSection {
     display: flex;
+    display: none;
 }
 
 .content {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .header {
-    background-color: antiquewhite;
-    margin: 0;
+    background-color: #333;
+    display: flex;
+    color: #eee;
+    padding: 20px;
+}
+
+.addBook {
+    height: 40px;
+    width: 80px;
+    margin: 20px;
 }
