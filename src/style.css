@@ -4,6 +4,22 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+#bookForm {
+    padding: 40px;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    align-items: flex-start;
+}
+input {
+  display: inline-block;
+  width: 250px;
+  
+}
+
 .library {
     border: solid 1px;
     border-radius: 5px;
@@ -15,7 +31,26 @@ body {
     display: flex;
     justify-content: space-between;
     
-    height: 1.5em;
+    height: 2em;
+}
+legend {
+    background-color: #333;
+    color: #eee;
+    padding: 3px 6px;
+}
+
+button {
+    background-color: #333;
+    font-size: 1.05em;
+    font-weight: 400;
+    color: #eee;
+    border-radius: 5px;
+}
+
+.buttonHolder {
+    display: flex;
+    gap: 10px;
+    margin: 5px;
 }
 
 .bookText {
@@ -27,6 +62,17 @@ body {
 .formSection {
     display: flex;
     display: none;
+}
+
+.formFieldSet {
+    padding: 40px;
+    background-color: #eee;
+}
+
+.formSection ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .content {
@@ -43,7 +89,7 @@ body {
 }
 
 .addBook {
-    height: 40px;
-    width: 80px;
+    height: 45px;
+    width: 100px;
     margin: 20px;
 }

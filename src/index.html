@@ -13,24 +13,24 @@
         <h1>A library to store your books.</h1>
     </div>
     <div class="content">
-    <button class="addBook">Add a book.</button>
+    <button class="addBook">Add a book</button>
 
     <div class="formSection">
         <form id="bookForm">
             <section>
-                <fieldset>
+                <fieldset class="formFieldSet">
                     <legend>Book Details:</legend>
                     <ul>
                         <li>
                             <label for="bookTitle">
                                 <span>Book Title: </span>
-                                <input type="text" id="bookTitle" name="bookTitle" required minlength="1" maxlength="20"/>
+                                <input type="text" id="bookTitle" name="bookTitle" required minlength="1" maxlength="40"/>
                             </label>
                         </li>
                         <li>
                             <label for="bookAuthor">
                                 <span>Book Author: </span>
-                                <input type="text" id="bookAuthor" name="bookAuthor" required minlength="1" maxlength="20"/>
+                                <input type="text" id="bookAuthor" name="bookAuthor" required minlength="1" maxlength="40"/>
                             </label>
                         </li>
                         <li>
@@ -47,7 +47,7 @@
                         </li>
                         <li>
                             <label for="rating">
-                                <span>Rating? </span>:
+                                <span>Rating? </span>
                                 <input type="number" id="rating" name="rating" value="5" min="0" max="10" />
                             </label>
                         </li>
